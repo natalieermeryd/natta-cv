@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "natta-cv"
-  }
+    "default": "natta-cv",
+    "staging": "natta-cv"
+  },
+  "targets": {},
+  "etags": {}
 }
