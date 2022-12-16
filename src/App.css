@@ -1,38 +1,67 @@
 .App {
-  text-align: center;
+  margin: 0.5em;
+  color: white;
+  font-size: calc(10px + 1.7vmin);
+  font-weight: 200;
+  background-color: rgba(255, 255, 255, 0.359);
+  display: flex;
+  min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2 {
+  font-weight: 300;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.appSidebar {
+  float: left;
+  width: 30%;
+  min-height: 95vh;
+  padding: 0.5em;
+}
+
+.appSideContainer {
   display: flex;
+  width: auto;
+  height: 100%;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.sidebarBoxes {
+  width: 100%;
+  min-height: 7em;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.375);
+}
+
+.appContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 4em;
+}
+
+#sidePic {
+  display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.appBoxes {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.375);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  color: #845e86;
 }

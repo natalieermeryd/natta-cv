@@ -1,13 +1,32 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: "Unbounded", "Ubuntu", "Fira Sans Extra Condensed", "Oswald",
+    "Fira Code", "Rubik 80s Fade", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  /*
+font-family: 'Fira Code', monospace;
+font-family: 'Fira Sans Extra Condensed', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Rubik 80s Fade', cursive;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Unbounded', cursive;
+*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.53),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(255, 172, 84, 0.53), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.53), rgba(0, 0, 255, 0) 70.71%);
+  background-repeat: no-repeat;
+  color: #fff;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
