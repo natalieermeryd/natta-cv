@@ -5,9 +5,7 @@ function App() {
     <div className="App">
       <div className="appSidebar">
         <div className="appSideContainer">
-          <div id="sidePic" className="sidebarBoxes">
-            PIC
-          </div>
+          <div id="sidePic" className="sidebarBoxes" />
           <div className="sidebarBoxes">1</div>
           <div className="sidebarBoxes">2</div>
           <div className="sidebarBoxes">3</div>

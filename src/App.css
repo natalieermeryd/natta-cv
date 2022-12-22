@@ -51,12 +51,13 @@ h2 {
 }
 
 #sidePic {
+  max-width: 200px;
   background-image: url(./assets/nattapic.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   width: 100%;
-  align-items: center;
-  justify-content: center;
 }
 
 .appBoxes {
