@@ -51,6 +51,8 @@ h2 {
 }
 
 #sidePic {
+  background-image: url(./assets/nattapic.jpg);
+  background-size: contain;
   display: flex;
   width: 100%;
   align-items: center;
