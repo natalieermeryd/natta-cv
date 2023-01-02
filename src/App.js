@@ -1,4 +1,5 @@
 import "./App.css";
+import Profile from "./components/Profile";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <h2>Frontend Developer</h2>
         </div>
         <div id="appFirst" className="appBoxes">
-          1
+          <Profile />
         </div>
         <div id="appSecond" className="appBoxes">
           2

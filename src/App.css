@@ -9,8 +9,13 @@
 }
 
 h1,
-h2 {
+h2,
+h5 {
   font-weight: 300;
+}
+
+h5 {
+  font-size: 2vw;
 }
 
 @media (prefers-reduced-motion: no-preference) {
