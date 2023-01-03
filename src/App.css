@@ -1,75 +1,120 @@
-.App {
-  margin: 0.5em;
+.app {
   color: white;
-  font-size: calc(10px + 1.7vmin);
-  font-weight: 200;
   background-color: rgba(255, 255, 255, 0.359);
-  display: flex;
-  min-height: 95vh;
-}
-
-h1,
-h2,
-h5 {
-  font-weight: 300;
-}
-
-h5 {
-  font-size: 2vw;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-}
-
-.appSidebar {
-  float: left;
-  width: 30%;
-  min-height: 95vh;
-  padding: 0.5em;
-}
-
-.appSideContainer {
-  display: flex;
-  width: auto;
-  height: 100%;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
 }
 
 .sidebarBoxes {
-  width: 100%;
-  min-height: 7em;
-
   border-top: 1px solid rgba(255, 255, 255, 0.375);
 }
 
-.appContainer {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding-right: 1em;
-  padding-left: 1em;
-  padding-bottom: 4em;
-}
-
 #sidePic {
-  max-width: 200px;
   background-image: url(./assets/nattapic.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
-  width: 100%;
 }
 
 .appBoxes {
-  width: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.375);
 }
 
-a {
-  color: #845e86;
+@media (max-height: 699px) and (max-width: 639px) {
+  .app {
+    margin: 0.5em;
+  }
+
+  .appSidebar {
+    padding: 0.5em;
+  }
+
+  .appSideContainer {
+  }
+
+  .sidebarBoxes {
+  }
+
+  .appContainer {
+  }
+
+  #sidePic {
+  }
+
+  .appBoxes {
+  }
+}
+
+@media (min-height: 700px) and (min-width: 640px) {
+  .app {
+    margin: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 97vh;
+    min-width: fit-content;
+  }
+
+  .app > div {
+    flex: 1 1 33%;
+  }
+
+  .appHeader {
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: space-between;
+    min-width: 92vw;
+    padding: 0.5em;
+    width: fit-content;
+  }
+
+  #sidePic {
+    max-width: 300px;
+    max-height: 170px;
+    min-width: 200px;
+    min-height: 150px;
+
+    border: 0.8px solid rgba(255, 255, 255, 0.699);
+  }
+
+  .headerTitle {
+    text-align: right;
+    padding-right: 1vw;
+  }
+
+  .appSidebar {
+    float: left;
+    min-width: 20vh;
+    max-width: 32%;
+    max-height: 96%;
+    padding: 0.5em;
+  }
+
+  .appSideContainer {
+    display: flex;
+    width: auto;
+    min-height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+  }
+
+  .sidebarBoxes {
+    width: 100%;
+    min-height: 110px;
+    height: auto;
+  }
+
+  .appContainer {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 0.5em;
+  }
+
+  .appBoxes {
+    width: 100%;
+    height: auto;
+  }
 }

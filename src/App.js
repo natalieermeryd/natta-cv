@@ -1,33 +1,53 @@
 import "./App.css";
+
+import Details from "./components/Details";
+import Links from "./components/Links";
+import Skills from "./components/Skills";
+import References from "./components/References";
+
 import Profile from "./components/Profile";
+import EmploymentHistory from "./components/EmploymentHistory";
+import EducationHistory from "./components/EducationHistory";
+import Courses from "./components/Courses";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
+      <div className="appHeader">
+        <div id="sidePic" />
+        <div className="headerTitle">
+          <h2>Natalie Ermeryd Stamer</h2>
+          <h5>Frontend Developer</h5>
+        </div>
+      </div>
       <div className="appSidebar">
         <div className="appSideContainer">
-          <div id="sidePic" className="sidebarBoxes" />
-          <div className="sidebarBoxes">1</div>
-          <div className="sidebarBoxes">2</div>
-          <div className="sidebarBoxes">3</div>
+          <div className="sidebarBoxes">
+            <Details />
+          </div>
+          <div className="sidebarBoxes">
+            <Links />
+          </div>
+          <div className="sidebarBoxes">
+            <Skills />
+          </div>
+          <div className="sidebarBoxes">
+            <References />
+          </div>
         </div>
       </div>
       <div className="appContainer">
-        <div className="appHeader">
-          <h1>Natalie Ermeryd Stamer</h1>
-          <h2>Frontend Developer</h2>
-        </div>
         <div id="appFirst" className="appBoxes">
           <Profile />
         </div>
         <div id="appSecond" className="appBoxes">
-          2
+          <EmploymentHistory />
         </div>
         <div id="appThird" className="appBoxes">
-          3
+          <EducationHistory />
         </div>
         <div id="appFourth" className="appBoxes">
-          4
+          <Courses />
         </div>
       </div>
     </div>
