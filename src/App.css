@@ -1,6 +1,9 @@
 .app {
-  color: white;
-  background-color: rgba(255, 255, 255, 0.359);
+  font-size: calc(12px + 1vmin);
+  color: rgb(255, 255, 255);
+  text-shadow: 0.8px 0.5px 1.2px rgba(0, 0, 0, 0.52);
+  background-color: rgba(255, 255, 255, 0.284);
+  border: 0.5px solid rgba(255, 255, 255, 0.504);
 }
 
 .sidebarBoxes {
@@ -16,6 +19,11 @@
 
 .appBoxes {
   border-top: 1px solid rgba(255, 255, 255, 0.375);
+}
+
+p {
+  font-weight: 200;
+  font-size: 1.6vh;
 }
 
 @media (max-height: 699px) and (max-width: 639px) {
