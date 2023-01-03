@@ -26,6 +26,7 @@ p {
   font-size: 1.6vh;
 }
 
+/*
 @media (max-height: 699px) and (max-width: 639px) {
   .app {
     margin: 0.5em;
@@ -49,7 +50,7 @@ p {
 
   .appBoxes {
   }
-}
+}*/
 
 @media (min-height: 700px) and (min-width: 640px) {
   .app {
