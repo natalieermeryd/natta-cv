@@ -24,25 +24,28 @@ font-family: 'Unbounded', cursive;
     linear-gradient(336deg, rgba(0, 0, 255, 0.53), rgba(0, 0, 255, 0) 70.71%);
   background-repeat: no-repeat;
   color: #fff;
-  font-size: calc(12px + 1vmin);
-}
-
-h1,
-h2 {
-  font-weight: 300;
-}
-
-h3 h4,
-h5,
-h6 {
-  font-weight: 200;
-}
-
-a {
-  color: #845e86;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1,
+h2,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+h3,
+h4 {
+  font-weight: 200;
+}
+
+a {
+  font-weight: 200;
+  color: #845e86;
+  font-size: 0.78rem;
+  text-decoration: none;
 }

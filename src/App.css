@@ -1,13 +1,14 @@
 .app {
-  font-size: calc(12px + 1vmin);
   color: rgb(255, 255, 255);
-  text-shadow: 0.8px 0.5px 1.2px rgba(0, 0, 0, 0.52);
-  background-color: rgba(255, 255, 255, 0.284);
+  text-shadow: 0.1px 0.3px 1.2px rgba(0, 0, 0, 0.642);
+  background-color: rgba(255, 255, 255, 0.249);
   border: 0.5px solid rgba(255, 255, 255, 0.504);
 }
 
 .sidebarBoxes {
   border-top: 1px solid rgba(255, 255, 255, 0.375);
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 #sidePic {
@@ -19,15 +20,59 @@
 
 .appBoxes {
   border-top: 1px solid rgba(255, 255, 255, 0.375);
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
-p {
-  font-weight: 200;
-  font-size: 1.6vh;
+.details,
+.courses,
+.educationHistory,
+.employmentHistory,
+.links,
+.profile,
+.references,
+.skills,
+.languages {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: horizontal;
+}
+
+.detailTitle,
+.coursesTitle,
+.educationTitle,
+.educationEnd,
+.employmentTitle,
+.linksTitle,
+.profileTitle,
+.referencesTitle,
+.skillsTitle,
+.languagesTitle {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-right: 2px;
+  margin-left: 1rem;
+  width: 0px;
+}
+
+ul {
+  padding-left: 6px;
+}
+
+li {
+  font-weight: 300;
+  font-size: 1rem;
+  list-style: none;
+
+  line-height: 1.1;
 }
 
 /*
-@media (max-height: 699px) and (max-width: 639px) {
+@media (max-height: 699px) and (max-width: 654px) {
   .app {
     margin: 0.5em;
   }
@@ -52,7 +97,7 @@ p {
   }
 }*/
 
-@media (min-height: 700px) and (min-width: 640px) {
+@media (min-height: 700px) and (min-width: 755px) {
   .app {
     margin: 0.5em;
     display: flex;
@@ -94,6 +139,8 @@ p {
     max-width: 32%;
     max-height: 96%;
     padding: 0.5em;
+    justify-content: center;
+    align-items: center;
   }
 
   .appSideContainer {
@@ -101,14 +148,12 @@ p {
     width: auto;
     min-height: 100%;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    justify-content: space-between;
+    row-gap: 0.4rem;
+    justify-content: flex-start;
   }
 
   .sidebarBoxes {
     width: 100%;
-    min-height: 110px;
     height: auto;
   }
 
@@ -116,9 +161,7 @@ p {
     display: flex;
     width: auto;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0.5em;
   }
 

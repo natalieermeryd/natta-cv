@@ -9,6 +9,7 @@ import Profile from "./components/Profile";
 import EmploymentHistory from "./components/EmploymentHistory";
 import EducationHistory from "./components/EducationHistory";
 import Courses from "./components/Courses";
+import Languages from "./components/Languages";
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
           </div>
           <div className="sidebarBoxes">
             <Skills />
+          </div>
+          <div className="sidebarBoxes">
+            <Languages />
           </div>
           <div className="sidebarBoxes">
             <References />
