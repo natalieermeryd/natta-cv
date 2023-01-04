@@ -2,7 +2,7 @@ function EmploymentHistory() {
   return (
     <div className="employmentHistory">
       <h5 className="employmentTitle">Employment</h5>
-      <h5 className="educationEnd">History</h5>
+      <h5 className="employmentEnd">History</h5>
       <ul>
         <li>Address:</li>
         <a

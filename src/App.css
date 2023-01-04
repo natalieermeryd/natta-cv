@@ -43,6 +43,7 @@
 .educationTitle,
 .educationEnd,
 .employmentTitle,
+.employmentEnd,
 .linksTitle,
 .profileTitle,
 .referencesTitle,
@@ -53,21 +54,22 @@
 
   text-transform: uppercase;
   text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.621);
 
-  margin-right: 2px;
-  margin-left: 1rem;
+  margin-right: 0.3rem;
+  margin-left: 1.2rem;
   width: 0px;
 }
 
 ul {
-  padding-left: 6px;
+  padding-left: 2vw;
 }
 
 li {
   font-weight: 300;
-  font-size: 1rem;
   list-style: none;
-
+  font-size: calc(6px + 1vw);
   line-height: 1.1;
 }
 
@@ -77,23 +79,51 @@ li {
     margin: 0.5em;
   }
 
+  .appHeader {
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: space-between;
+    min-width: 92vw;
+    padding: 0.5em;
+    width: fit-content;
+  }
+
+  #sidePic {
+    max-width: 300px;
+    max-height: 170px;
+    min-width: 200px;
+    min-height: 150px;
+
+    border: 0.8px solid rgba(255, 255, 255, 0.699);
+  }
+
+  .headerTitle {
+    text-align: right;
+    padding-right: 1vw;
+  }
+
   .appSidebar {
     padding: 0.5em;
   }
 
   .appSideContainer {
+
   }
 
   .sidebarBoxes {
+
   }
 
   .appContainer {
-  }
 
-  #sidePic {
   }
 
   .appBoxes {
+
+  }
+
+  li {
+    font-size: calc(10px + 1vw);
   }
 }*/
 
@@ -168,5 +198,23 @@ li {
   .appBoxes {
     width: 100%;
     height: auto;
+  }
+
+  .detailTitle,
+  .coursesTitle,
+  .educationTitle,
+  .educationEnd,
+  .employmentTitle,
+  .employmentEnd,
+  .linksTitle,
+  .profileTitle,
+  .referencesTitle,
+  .skillsTitle,
+  .languagesTitle {
+    font-size: calc(10px + 0.6vw);
+  }
+
+  li {
+    font-size: calc(6px + 1vw);
   }
 }
