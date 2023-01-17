@@ -13,7 +13,7 @@ import Languages from "./components/Languages";
 
 function App() {
   return (
-    <div className="app">
+    <div data-testId="testElement" className="app">
       <div className="appHeader">
         <div id="sidePic" />
         <div className="headerTitle">

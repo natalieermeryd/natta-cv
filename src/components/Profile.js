@@ -1,6 +1,6 @@
 function Profile() {
   return (
-    <div className="profile">
+    <div data-testid="profile-div" className="profile">
       <h5 className="profileTitle">Profile</h5>
       <ul>
         <li>Address:</li>
