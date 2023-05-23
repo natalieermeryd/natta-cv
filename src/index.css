@@ -15,14 +15,22 @@ font-family: 'Unbounded', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: linear-gradient(
-      217deg,
-      rgba(255, 0, 0, 0.53),
-      rgba(255, 0, 0, 0) 70.71%
-    ),
-    linear-gradient(127deg, rgba(255, 172, 84, 0.53), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.53), rgba(0, 0, 255, 0) 70.71%);
-  background-repeat: no-repeat;
+      /* The image used */
+      background-image: linear-gradient(
+        217deg,
+        rgba(255, 0, 0, 0.53),
+        rgba(255, 0, 0, 0) 70.71%
+      ),
+      linear-gradient(127deg, rgba(255, 172, 84, 0.53), rgba(0, 255, 0, 0) 70.71%),
+      linear-gradient(336deg, rgba(0, 0, 255, 0.53), rgba(0, 0, 255, 0) 70.71%);
+  
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+  height: 100vh;
   color: #fff;
 }
 
@@ -30,6 +38,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.index__container {
+    
+
+    /* The image used */
+    background-image: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.53),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(255, 172, 84, 0.53), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.53), rgba(0, 0, 255, 0) 70.71%);
+  
+    /* Full height */
+    height: 30%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+
 
 h1,
 h2,
